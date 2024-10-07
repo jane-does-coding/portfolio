@@ -1,0 +1,14 @@
+.header {
+	position: fixed;
+	right: 15px;
+	top: 20px;
+	z-index: 998;
+	.menu {
+		width: 90vw;
+		height: 650px;
+		background: #c7d2fe;
+		overflow: hidden;
+		border-radius: 25px;
+		position: relative;
+	}
+}
