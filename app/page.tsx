@@ -1,103 +1,97 @@
-import Image from "next/image";
+"use client";
+import styles from "./page.module.css";
+import Project from "../components/project";
+import Modal from "../components/learnMore";
+import { useState } from "react";
+import Projects from "@/components/Projects";
+import Pharagraph from "@/components/Word";
+import TextParallax from "@/components/textParallax";
 
 export default function Home() {
-  return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+	const projects = [
+		{
+			title: "Websites Development",
+			src: "/projects/mediblob.png",
+			color: "#000000",
+		},
+		{
+			title: "Website Designing",
+			src: "/projects/mediblob.png",
+			color: "#8C8C8C",
+		},
+		{
+			title: "Website Maintenance / Fixes",
+			src: "/projects/mediblob.png",
+			color: "#EFE8D3",
+		},
+		{
+			title: "Website Redesign",
+			src: "/projects/mediblob.png",
+			color: "#706D63",
+		},
+		{
+			title: "Landing Pages & Microsites",
+			src: "/projects/mediblob.png",
+			color: "#8C8C8C",
+		},
+	];
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+	const [modal, setModal] = useState({ active: false, index: 0 });
+
+	return (
+		<div className="w-full px-[7.5vw] py-[2vh]">
+			{/* 	<div className="flex justify-evenly w-full mt-[5vh]">
+				{Array.from({ length: 70 }).map((_, i) => (
+					<div key={i} className="text-neutral-600 text-[1.5vh] mb-[3vh]">
+						+
+					</div>
+				))}
+			</div>
+			<Pharagraph value="Im Yevheniia, a curious and creative developer _image1_ who has been coding for 3 years and loves turning ideas into real projects. _image2_ I enjoy experimenting with design, learning new tools, and building fun, interactive websites, _image3_ always looking for ways to grow and explore tech in my own style." />
+			 */}
+			<div className="flex justify-evenly w-full mt-[5vh]">
+				{Array.from({ length: 70 }).map((_, i) => (
+					<div key={i} className="text-neutral-600 text-[1.5vh]">
+						+
+					</div>
+				))}
+			</div>
+			<h2 className="text-[5vh] mb-[3vh] mt-[2vh]">Projects</h2>
+			<Projects />
+			<div className="flex justify-evenly w-full mt-[7.5vh]">
+				{Array.from({ length: 70 }).map((_, i) => (
+					<div key={i} className="text-neutral-600 text-[1.5vh]">
+						+
+					</div>
+				))}
+			</div>
+			<h2 className="text-[5vh] mb-[3vh] mt-[2vh]">Services</h2>
+			<main className={styles.main}>
+				<div className={styles.body}>
+					{projects.map((project, index) => {
+						return (
+							<Project
+								index={index}
+								title={project.title}
+								setModal={setModal}
+								key={index}
+							/>
+						);
+					})}
+				</div>
+				<Modal modal={modal} projects={projects} />
+			</main>
+
+			<div className="h-[7.5vh]"></div>
+			<div className="flex justify-evenly w-full mb-[7vh]">
+				{Array.from({ length: 70 }).map((_, i) => (
+					<div key={i} className="text-neutral-600 text-[1.5vh]">
+						+
+					</div>
+				))}
+			</div>
+			<TextParallax />
+			<div className="h-[7.5vh]"></div>
+		</div>
+	);
 }

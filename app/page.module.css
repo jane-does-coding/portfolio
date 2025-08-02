@@ -1,0 +1,14 @@
+.main {
+	display: flex;
+	min-height: 55vh;
+	align-items: center;
+	justify-content: center;
+}
+
+.body {
+	width: 1000px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
