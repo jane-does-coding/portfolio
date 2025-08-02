@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import { FaBehance, FaDribbble, FaGithub, FaLinkedin } from "react-icons/fa";
 import { PiLinkBold } from "react-icons/pi";
@@ -23,24 +24,24 @@ const Page = () => {
 				alt=""
 			/>
 			<div className="flex w-full gap-[1vw] mt-[4vh] pt-[3vh] border-t-[1px] border-neutral-300">
-				<a
+				<Link
 					href="/"
 					className="w-full bg-neutral-800 text-white items-center justify-center py-[1vh] text-[2vh] rounded-[1.5vh] flex gap-[1vw]"
 				>
 					<FaGithub /> Github
-				</a>
-				<a
+				</Link>
+				<Link
 					href="/"
 					className="w-full bg-neutral-800 text-white items-center justify-center py-[1vh] text-[2vh] rounded-[1.5vh] flex gap-[1vw]"
 				>
 					<FaDribbble /> Dribbble
-				</a>
-				<a
+				</Link>
+				<Link
 					href="/"
 					className="w-full bg-neutral-800 text-white items-center justify-center py-[1vh] text-[2vh] rounded-[1.5vh] flex gap-[1vw]"
 				>
 					<PiLinkBold /> Demo
-				</a>
+				</Link>
 			</div>
 			<div className="flex flex-col">
 				<h1 className="text-[5vh] text-left mt-[4vh] mb-[0.5vh]">
@@ -149,36 +150,36 @@ const Page = () => {
 					))}
 				</div>
 				<div className="flex flex-wrap gap-x-[2vw] gap-y-[1.75vh] max-w-[95%] mt-[3vh]">
-					<a
+					<Link
 						href="/"
 						className="text-[2vh] px-[2vw] py-[1vh] rounded-full font-medium border-[1px] border-neutral-800 flex gap-[0.75vw] items-center justify-center"
 					>
 						<FaGithub /> Github
-					</a>
-					<a
+					</Link>
+					<Link
 						href="/"
 						className="text-[2vh] px-[2vw] py-[1vh] rounded-full font-medium border-[1px] border-neutral-800 flex gap-[0.75vw] items-center justify-center"
 					>
 						<FaLinkedin className="text-blue-800" /> Linkedin
-					</a>
-					<a
+					</Link>
+					<Link
 						href="/"
 						className="text-[2vh] px-[2vw] py-[1vh] rounded-full font-medium border-[1px] border-neutral-800 flex gap-[0.75vw] items-center justify-center"
 					>
 						<FaDribbble className="text-rose-600" /> Dribbble
-					</a>
-					<a
+					</Link>
+					<Link
 						href="/"
 						className="text-[2vh] px-[2vw] py-[1vh] rounded-full font-medium border-[1px] border-neutral-800 flex gap-[0.75vw] items-center justify-center"
 					>
 						<FaBehance className="text-sky-600" /> Behance
-					</a>
-					<a
+					</Link>
+					<Link
 						href="/"
 						className="text-[2vh] px-[2vw] py-[1vh] rounded-full font-medium border-[1px] border-neutral-800 flex gap-[0.75vw] items-center justify-center"
 					>
 						<PiLinkBold className="text-green-800" /> Demo
-					</a>
+					</Link>
 				</div>
 			</div>
 			<div className="flex flex-col">
