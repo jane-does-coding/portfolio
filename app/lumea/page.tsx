@@ -7,37 +7,37 @@ const Page = () => {
 	return (
 		<div className="w-full px-[7.5vw] pt-[4vh] pb-[5vh]">
 			<div className="flex flex-col">
-				<p className="text-center text-[2vh]">March 10, 2024</p>
-				<h1 className="text-[7vh] text-center ">Pomodoro</h1>
+				<p className="text-center text-[2vh]">April 11, 2025</p>
+				<h1 className="text-[7vh] text-center ">lumea</h1>
 				<div className="flex gap-[1.5vw] items-center justify-center w-full mb-[4vh]">
 					<img
-						src="/projects/pomodoro.png"
-						className="h-[5vh] aspect-[1] object-cover border-[1px] border-neutral-400 rounded-full"
+						src="/projects/lumea.png"
+						className="h-[5vh] aspect-[1] border-[1px] border-neutral-400 rounded-full"
 						alt=""
 					/>
 					<p className="text-[2.5vh]">Jane Doe</p>
 				</div>
 			</div>
 			<img
-				src="/projects/pomodoro.png"
+				src="/projects/lumea.png"
 				className="border-[1px] border-neutral-500 rounded-[1.5vh] shadow-md"
 				alt=""
 			/>
 			<div className="flex w-full gap-[1vw] mt-[4vh] pt-[3vh] border-t-[1px] border-neutral-300">
 				<Link
-					href="https://github.com/jane-does-coding/Productivity-App"
+					href="/"
 					className="w-full bg-neutral-800 text-white items-center justify-center py-[1vh] text-[2vh] rounded-[1.5vh] flex gap-[1vw]"
 				>
 					<FaGithub /> Github
 				</Link>
-				<Link
+				{/* <Link
 					href="/"
 					className="w-full bg-neutral-800 text-white items-center justify-center py-[1vh] text-[2vh] rounded-[1.5vh] flex gap-[1vw]"
 				>
 					<FaDribbble /> Dribbble
-				</Link>
+				</Link> */}
 				<Link
-					href="/"
+					href="https://lumea-techpals.vercel.app/"
 					className="w-full bg-neutral-800 text-white items-center justify-center py-[1vh] text-[2vh] rounded-[1.5vh] flex gap-[1vw]"
 				>
 					<PiLinkBold /> Demo
@@ -55,10 +55,13 @@ const Page = () => {
 					))}
 				</div>
 				<p className="text-[2.5vh] mt-[2vh] tracking-[0.5px] leading-[4vh]">
-					From the sleek design to the lightning-fast performance, every line of
-					code was a step closer to perfection. With Next.js paving the way,
-					Tailwind making things look slick, and TypeScript keeping everything
-					in check, the result was nothing short of spectacular.
+					A modern Next.js application that calculates your carbon footprint
+					based on lifestyle factors like transportation, diet, and energy
+					usage. The calculator provides: Detailed breakdown of emissions by
+					category Visual comparisons to global and US averages Personalized
+					recommendations for reduction Responsive design with smooth animations
+					Built with Next.js for optimal performance and clean UI design
+					principles.
 				</p>
 			</div>
 			<div className="flex flex-col">
@@ -104,12 +107,14 @@ const Page = () => {
 				</div>
 				<div className="flex flex-wrap gap-x-[2vw] gap-y-[1.75vh] max-w-[95%] mt-[3vh]">
 					<span className="text-[2vh] px-[2vw] py-[1vh] rounded-full border-[1px] border-neutral-800">
-						Vite
+						Next.js
 					</span>
 					<span className="text-[2vh] px-[2vw] py-[1vh] rounded-full border-[1px] border-neutral-800">
 						Typescript
 					</span>
-
+					<span className="text-[2vh] px-[2vw] py-[1vh] rounded-full border-[1px] border-neutral-800">
+						Javascript
+					</span>
 					<span className="text-[2vh] px-[2vw] py-[1vh] rounded-full border-[1px] border-neutral-800">
 						Tailwind
 					</span>
@@ -142,31 +147,31 @@ const Page = () => {
 				</div>
 				<div className="flex flex-wrap gap-x-[2vw] gap-y-[1.75vh] max-w-[95%] mt-[3vh]">
 					<Link
-						href="/"
+						href="https://github.com/jane-does-coding/lumea-techpals"
 						className="text-[2vh] px-[2vw] py-[1vh] rounded-full font-medium border-[1px] border-neutral-800 flex gap-[0.75vw] items-center justify-center"
 					>
 						<FaGithub /> Github
 					</Link>
-					<Link
-						href="https://www.linkedin.com/feed/update/urn:li:activity:7169912560945688576/"
+					{/* <Link
+						href="/"
 						className="text-[2vh] px-[2vw] py-[1vh] rounded-full font-medium border-[1px] border-neutral-800 flex gap-[0.75vw] items-center justify-center"
 					>
 						<FaLinkedin className="text-blue-800" /> Linkedin
-					</Link>
-					<Link
-						href="https://dribbble.com/shots/23752831-Pomodoro-Timer"
+					</Link> */}
+					{/* <Link
+						href="/"
 						className="text-[2vh] px-[2vw] py-[1vh] rounded-full font-medium border-[1px] border-neutral-800 flex gap-[0.75vw] items-center justify-center"
 					>
 						<FaDribbble className="text-rose-600" /> Dribbble
 					</Link>
-					{/* <Link
+					<Link
 						href="/"
 						className="text-[2vh] px-[2vw] py-[1vh] rounded-full font-medium border-[1px] border-neutral-800 flex gap-[0.75vw] items-center justify-center"
 					>
 						<FaBehance className="text-sky-600" /> Behance
 					</Link> */}
 					<Link
-						href="https://productivity-app-umber.vercel.app/"
+						href="https://lumea-techpals.vercel.app/"
 						className="text-[2vh] px-[2vw] py-[1vh] rounded-full font-medium border-[1px] border-neutral-800 flex gap-[0.75vw] items-center justify-center"
 					>
 						<PiLinkBold className="text-green-800" /> Demo

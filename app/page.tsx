@@ -7,6 +7,7 @@ import Projects from "@/components/Projects";
 import Pharagraph from "@/components/Word";
 import TextParallax from "@/components/textParallax";
 import Info from "@/components/Info";
+import Insights from "@/components/Insights";
 
 export default function Home() {
 	const projects = [
@@ -95,6 +96,7 @@ export default function Home() {
 			</div>
 			{/* 			<TextParallax />
 			 */}{" "}
+			<Insights />
 			<div className="h-[7.5vh]"></div>
 		</div>
 	);

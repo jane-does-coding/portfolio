@@ -7,7 +7,7 @@ const Page = () => {
 	return (
 		<div className="w-full px-[7.5vw] pt-[4vh] pb-[5vh]">
 			<div className="flex flex-col">
-				<p className="text-center text-[2vh]">April 11, 2024</p>
+				<p className="text-center text-[2vh]">August 8, 2025</p>
 				<h1 className="text-[7vh] text-center ">Mediblob</h1>
 				<div className="flex gap-[1.5vw] items-center justify-center w-full mb-[4vh]">
 					<img
@@ -55,12 +55,13 @@ const Page = () => {
 					))}
 				</div>
 				<p className="text-[2.5vh] mt-[2vh] tracking-[0.5px] leading-[4vh]">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
-					accusantium velit iste, ullam iure illo veniam quaerat ipsam labore
-					cum? Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-					Voluptatibus, delectus. Lorem ipsum dolor sit amet consectetur,
-					adipisicing elit. Accusamus mollitia voluptas, pariatur similique
-					dolorum magnam.
+					Whenever people try to book a doctors appointment for a quick advice
+					or something that is so minor, it doesn't need an in person visit, and
+					this resolves that, by providing a quick way of communication. What it
+					does? Mediblob is a modern medical portal that connects patients and
+					doctors. It lets patients track their health in real time symptoms,
+					medications, appointments while doctors monitor everything on a
+					dashboard and can manage care plans.
 				</p>
 			</div>
 			<div className="flex flex-col">
@@ -151,31 +152,31 @@ const Page = () => {
 				</div>
 				<div className="flex flex-wrap gap-x-[2vw] gap-y-[1.75vh] max-w-[95%] mt-[3vh]">
 					<Link
-						href="/"
+						href="https://github.com/jane-does-coding/Mediblob"
 						className="text-[2vh] px-[2vw] py-[1vh] rounded-full font-medium border-[1px] border-neutral-800 flex gap-[0.75vw] items-center justify-center"
 					>
 						<FaGithub /> Github
 					</Link>
-					<Link
+					{/* 	<Link
 						href="/"
 						className="text-[2vh] px-[2vw] py-[1vh] rounded-full font-medium border-[1px] border-neutral-800 flex gap-[0.75vw] items-center justify-center"
 					>
 						<FaLinkedin className="text-blue-800" /> Linkedin
-					</Link>
+					</Link> */}
 					<Link
-						href="/"
+						href="https://dribbble.com/shots/26324353-Mediblob"
 						className="text-[2vh] px-[2vw] py-[1vh] rounded-full font-medium border-[1px] border-neutral-800 flex gap-[0.75vw] items-center justify-center"
 					>
 						<FaDribbble className="text-rose-600" /> Dribbble
 					</Link>
-					<Link
+					{/* <Link
 						href="/"
 						className="text-[2vh] px-[2vw] py-[1vh] rounded-full font-medium border-[1px] border-neutral-800 flex gap-[0.75vw] items-center justify-center"
 					>
 						<FaBehance className="text-sky-600" /> Behance
-					</Link>
+					</Link> */}
 					<Link
-						href="/"
+						href="https://mediblob-gv6d.vercel.app/"
 						className="text-[2vh] px-[2vw] py-[1vh] rounded-full font-medium border-[1px] border-neutral-800 flex gap-[0.75vw] items-center justify-center"
 					>
 						<PiLinkBold className="text-green-800" /> Demo

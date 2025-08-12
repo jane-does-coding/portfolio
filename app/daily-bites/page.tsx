@@ -7,11 +7,11 @@ const Page = () => {
 	return (
 		<div className="w-full px-[7.5vw] pt-[4vh] pb-[5vh]">
 			<div className="flex flex-col">
-				<p className="text-center text-[2vh]">April 11, 2024</p>
-				<h1 className="text-[7vh] text-center ">Mediblob</h1>
+				<p className="text-center text-[2vh]">April 12, 2025</p>
+				<h1 className="text-[7vh] text-center ">Daily Bites</h1>
 				<div className="flex gap-[1.5vw] items-center justify-center w-full mb-[4vh]">
 					<img
-						src="/projects/pomodoro.png"
+						src="/projects/daily-bites.png"
 						className="h-[5vh] aspect-[1] object-cover border-[1px] border-neutral-400 rounded-full"
 						alt=""
 					/>
@@ -19,13 +19,13 @@ const Page = () => {
 				</div>
 			</div>
 			<img
-				src="/projects/pomodoro.png"
+				src="/projects/daily-bites.png"
 				className="border-[1px] border-neutral-500 rounded-[1.5vh] shadow-md"
 				alt=""
 			/>
 			<div className="flex w-full gap-[1vw] mt-[4vh] pt-[3vh] border-t-[1px] border-neutral-300">
 				<Link
-					href="/"
+					href="https://github.com/jane-does-coding/DailyBites"
 					className="w-full bg-neutral-800 text-white items-center justify-center py-[1vh] text-[2vh] rounded-[1.5vh] flex gap-[1vw]"
 				>
 					<FaGithub /> Github
@@ -55,12 +55,10 @@ const Page = () => {
 					))}
 				</div>
 				<p className="text-[2.5vh] mt-[2vh] tracking-[0.5px] leading-[4vh]">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
-					accusantium velit iste, ullam iure illo veniam quaerat ipsam labore
-					cum? Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-					Voluptatibus, delectus. Lorem ipsum dolor sit amet consectetur,
-					adipisicing elit. Accusamus mollitia voluptas, pariatur similique
-					dolorum magnam.
+					Functionality Authentication with password encryption Create Recipe
+					Edit Recipe Delete Recipe Sort/filter Recipes Search Recipe - TODO
+					Grid/List View - TODO Pages landing about recipes page for each
+					category create recipe edit recipe register login recipe saved profile
 				</p>
 			</div>
 			<div className="flex flex-col">
@@ -118,6 +116,12 @@ const Page = () => {
 						Tailwind
 					</span>
 					<span className="text-[2vh] px-[2vw] py-[1vh] rounded-full border-[1px] border-neutral-800">
+						Prisma
+					</span>
+					<span className="text-[2vh] px-[2vw] py-[1vh] rounded-full border-[1px] border-neutral-800">
+						MongoDB
+					</span>
+					<span className="text-[2vh] px-[2vw] py-[1vh] rounded-full border-[1px] border-neutral-800">
 						React
 					</span>
 					<span className="text-[2vh] px-[2vw] py-[1vh] rounded-full border-[1px] border-neutral-800">
@@ -151,12 +155,12 @@ const Page = () => {
 				</div>
 				<div className="flex flex-wrap gap-x-[2vw] gap-y-[1.75vh] max-w-[95%] mt-[3vh]">
 					<Link
-						href="/"
+						href="https://github.com/jane-does-coding/DailyBites"
 						className="text-[2vh] px-[2vw] py-[1vh] rounded-full font-medium border-[1px] border-neutral-800 flex gap-[0.75vw] items-center justify-center"
 					>
 						<FaGithub /> Github
 					</Link>
-					<Link
+					{/* 	<Link
 						href="/"
 						className="text-[2vh] px-[2vw] py-[1vh] rounded-full font-medium border-[1px] border-neutral-800 flex gap-[0.75vw] items-center justify-center"
 					>
@@ -173,9 +177,9 @@ const Page = () => {
 						className="text-[2vh] px-[2vw] py-[1vh] rounded-full font-medium border-[1px] border-neutral-800 flex gap-[0.75vw] items-center justify-center"
 					>
 						<FaBehance className="text-sky-600" /> Behance
-					</Link>
+					</Link> */}
 					<Link
-						href="/"
+						href="https://cooking-website-two.vercel.app/"
 						className="text-[2vh] px-[2vw] py-[1vh] rounded-full font-medium border-[1px] border-neutral-800 flex gap-[0.75vw] items-center justify-center"
 					>
 						<PiLinkBold className="text-green-800" /> Demo
