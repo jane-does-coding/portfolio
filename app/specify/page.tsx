@@ -56,7 +56,7 @@ const Page = () => {
 				</div>
 				<p className="text-[2.5vh] mt-[2vh] tracking-[0.5px] leading-[4vh]">
 					I often have so many tasks that I just write down on sticky notes and
-					eventually forget about them, and I've decide to switch it up and
+					eventually forget about them, and I&apos;ve decide to switch it up and
 					actually get organized in my life. I figured that the way I was
 					organizing my tasks before was sticky notes with different colors
 					representing different categories, so I decided to implement something
