@@ -56,12 +56,12 @@ const Page = () => {
 				</div>
 				<p className="text-[2.5vh] mt-[2vh] tracking-[0.5px] leading-[4vh]">
 					Whenever people try to book a doctors appointment for a quick advice
-					or something that is so minor, it doesn't need an in person visit, and
-					this resolves that, by providing a quick way of communication. What it
-					does? Mediblob is a modern medical portal that connects patients and
-					doctors. It lets patients track their health in real time symptoms,
-					medications, appointments while doctors monitor everything on a
-					dashboard and can manage care plans.
+					or something that is so minor, it doesn&apos;t need an in person
+					visit, and this resolves that, by providing a quick way of
+					communication. What it does? Mediblob is a modern medical portal that
+					connects patients and doctors. It lets patients track their health in
+					real time symptoms, medications, appointments while doctors monitor
+					everything on a dashboard and can manage care plans.
 				</p>
 			</div>
 			<div className="flex flex-col">
