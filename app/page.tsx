@@ -6,6 +6,7 @@ import { useState } from "react";
 import Projects from "@/components/Projects";
 import Pharagraph from "@/components/Word";
 import TextParallax from "@/components/textParallax";
+import Info from "@/components/Info";
 
 export default function Home() {
 	const projects = [
@@ -49,7 +50,10 @@ export default function Home() {
 			</div>
 			<Pharagraph value="Im Yevheniia, a curious and creative developer _image1_ who has been coding for 3 years and loves turning ideas into real projects. _image2_ I enjoy experimenting with design, learning new tools, and building fun, interactive websites, _image3_ always looking for ways to grow and explore tech in my own style." />
 			 */}
-			<div className="flex justify-evenly w-full mt-[5vh]">
+			<div className="min-h-[80vh] w-full items-center justify-center flex pt-[7.5vh]">
+				<Info />
+			</div>
+			<div className="flex justify-evenly w-full mt-[0vh]">
 				{Array.from({ length: 70 }).map((_, i) => (
 					<div key={i} className="text-neutral-600 text-[1.5vh]">
 						+
@@ -81,7 +85,6 @@ export default function Home() {
 				</div>
 				<Modal modal={modal} projects={projects} />
 			</main>
-
 			<div className="h-[7.5vh]"></div>
 			<div className="flex justify-evenly w-full mb-[7vh]">
 				{Array.from({ length: 70 }).map((_, i) => (
@@ -90,7 +93,8 @@ export default function Home() {
 					</div>
 				))}
 			</div>
-			<TextParallax />
+			{/* 			<TextParallax />
+			 */}{" "}
 			<div className="h-[7.5vh]"></div>
 		</div>
 	);
