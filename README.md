@@ -14,7 +14,7 @@ This project took me a long time due to trying to make it so the owner - me - co
 
 ## Demo
 
-[Portfolio Website - Live Demo](<[https://specify-summit-hacks.vercel.app](https://portfolio-phi-two-72.vercel.app/)>)
+[Portfolio Website - Live Demo](https://portfolio-phi-two-72.vercel.app/)
 
 ## Run Locally
 
