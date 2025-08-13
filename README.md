@@ -21,7 +21,7 @@ This project took me a long time due to trying to make it so the owner - me - co
 Clone the project
 
 ```bash
-  git clone [https://github.com/YevheniiaSimaka/Specify_SummitHacks](https://github.com/jane-does-coding/portfolio)
+  git clone https://github.com/jane-does-coding/portfolio
 ```
 
 Go to the project directory
