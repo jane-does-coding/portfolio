@@ -63,7 +63,7 @@ const Page = () => {
 					similar digitally.
 				</p>
 			</div>
-			<div className="flex flex-col">
+			{/* <div className="flex flex-col">
 				<h1 className="text-[5vh] text-left mt-[4vh] mb-[0.5vh]">
 					Pages & Gallery
 				</h1>
@@ -92,7 +92,7 @@ const Page = () => {
 						<p className="text-[2.5vh] mt-[1.25vh]">Dashboard</p>
 					</div>
 				</div>
-			</div>
+			</div> */}
 			<div className="flex flex-col">
 				<h1 className="text-[5vh] text-left mt-[5vh] mb-[0.5vh]">
 					Technologies & Tools
